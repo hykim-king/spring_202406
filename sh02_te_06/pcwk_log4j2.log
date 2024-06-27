@@ -1,0 +1,317 @@
+[DEBUG], 2024-06-27 17:39:30 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:39:30 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@659499f1
+[DEBUG], 2024-06-27 17:39:30 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:39:30 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:39:30 UserDaoJUnitTest:44 - ====================
+[DEBUG], 2024-06-27 17:39:30 UserDaoJUnitTest:45 - =context=org.springframework.context.support.GenericXmlApplicationContext@659499f1, started on Thu Jun 27 17:39:30 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:39:30 UserDaoJUnitTest:46 - =dao=com.pcwk.ehr.UserDao@1e4d3ce5
+[DEBUG], 2024-06-27 17:39:30 UserDaoJUnitTest:47 - ====================
+[DEBUG], 2024-06-27 17:40:38 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:40:38 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@659499f1
+[DEBUG], 2024-06-27 17:40:38 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:40:38 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:40:38 UserDaoJUnitTest:44 - ====================
+[DEBUG], 2024-06-27 17:40:38 UserDaoJUnitTest:45 - =context=org.springframework.context.support.GenericXmlApplicationContext@659499f1, started on Thu Jun 27 17:40:38 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:40:38 UserDaoJUnitTest:46 - =dao=com.pcwk.ehr.UserDao@1e4d3ce5
+[DEBUG], 2024-06-27 17:40:38 UserDaoJUnitTest:47 - ====================
+[DEBUG], 2024-06-27 17:40:38 UserDaoJUnitTest:61 - test()
+[DEBUG], 2024-06-27 17:40:38 UserDaoJUnitTest:54 - After each test
+[DEBUG], 2024-06-27 17:40:53 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:40:53 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@659499f1
+[DEBUG], 2024-06-27 17:40:53 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:40:53 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:40:53 UserDaoJUnitTest:44 - ====================
+[DEBUG], 2024-06-27 17:40:53 UserDaoJUnitTest:45 - =context=org.springframework.context.support.GenericXmlApplicationContext@659499f1, started on Thu Jun 27 17:40:53 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:40:53 UserDaoJUnitTest:46 - =dao=com.pcwk.ehr.UserDao@1e4d3ce5
+[DEBUG], 2024-06-27 17:40:53 UserDaoJUnitTest:47 - ====================
+[DEBUG], 2024-06-27 17:40:53 UserDaoJUnitTest:59 - test()
+[DEBUG], 2024-06-27 17:40:53 UserDaoJUnitTest:52 - After each test
+[DEBUG], 2024-06-27 17:46:49 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:46:49 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@47e2e487
+[DEBUG], 2024-06-27 17:46:49 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:46:49 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:46:49 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:46:49 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@47e2e487, started on Thu Jun 27 17:46:49 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:46:49 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@704deff2
+[DEBUG], 2024-06-27 17:46:49 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:46:49 UserDaoJUnitTest:75 - test()
+[DEBUG], 2024-06-27 17:46:49 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:46:59 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:46:59 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@201a4587
+[DEBUG], 2024-06-27 17:46:59 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:46:59 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:46:59 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:46:59 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@201a4587, started on Thu Jun 27 17:46:59 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:46:59 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@379614be
+[DEBUG], 2024-06-27 17:46:59 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:47:00 UserDao:47 - 1.sql   
+ DELETE FROM users    
+
+[DEBUG], 2024-06-27 17:47:00 UserDao:48 - 2.param 
+User [userId=james01, name=, password=, birthday=]
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:47:00 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:47:00 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@83298d7
+[DEBUG], 2024-06-27 17:47:00 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:47:00 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@83298d7, started on Thu Jun 27 17:47:00 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@1bc715b8
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:75 - test()
+[DEBUG], 2024-06-27 17:47:00 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:47:26 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:47:26 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4310d43
+[DEBUG], 2024-06-27 17:47:26 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:47:26 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:47:26 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:47:26 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@4310d43, started on Thu Jun 27 17:47:26 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:47:26 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@1e81f160
+[DEBUG], 2024-06-27 17:47:26 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:47:27 UserDao:47 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 17:47:27 UserDao:48 - 2.param 
+User [userId=james01, name=, password=, birthday=]
+[DEBUG], 2024-06-27 17:47:27 UserDao:53 - 3.flag 1
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:47:27 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:47:27 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@376a312c
+[DEBUG], 2024-06-27 17:47:27 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:47:27 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@376a312c, started on Thu Jun 27 17:47:27 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@16f7b4af
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:75 - test()
+[DEBUG], 2024-06-27 17:47:27 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:47:46 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:47:46 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4310d43
+[DEBUG], 2024-06-27 17:47:46 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:47:46 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@4310d43, started on Thu Jun 27 17:47:46 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@1e81f160
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:47:46 UserDao:47 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 17:47:46 UserDao:48 - 2.param 
+User [userId=james01, name=, password=, birthday=]
+[DEBUG], 2024-06-27 17:47:46 UserDao:53 - 3.flag 1
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:47:46 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:47:46 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@65a4798f
+[DEBUG], 2024-06-27 17:47:46 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:47:46 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@65a4798f, started on Thu Jun 27 17:47:46 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@5536379e
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:75 - test()
+[DEBUG], 2024-06-27 17:47:46 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:52:48 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:52:48 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4310d43
+[DEBUG], 2024-06-27 17:52:48 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:52:48 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:52:48 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:52:48 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@4310d43, started on Thu Jun 27 17:52:48 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:52:48 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@1e81f160
+[DEBUG], 2024-06-27 17:52:48 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:52:49 UserDao:89 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 17:52:49 UserDao:94 - 3.flag 1
+[DEBUG], 2024-06-27 17:52:49 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:52:49 UserDao:63 - 3. count:1
+[DEBUG], 2024-06-27 17:52:49 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:52:49 UserDao:63 - 3. count:2
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:52:49 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:52:49 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4a3e3e8b
+[DEBUG], 2024-06-27 17:52:49 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:52:49 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@4a3e3e8b, started on Thu Jun 27 17:52:49 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@389adf1d
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:82 - test()
+[DEBUG], 2024-06-27 17:52:49 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:54:09 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:54:09 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4310d43
+[DEBUG], 2024-06-27 17:54:09 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:54:09 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@4310d43, started on Thu Jun 27 17:54:09 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@1e81f160
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:54:09 UserDao:89 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 17:54:09 UserDao:94 - 3.flag 2
+[DEBUG], 2024-06-27 17:54:09 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:54:09 UserDao:63 - 3. count:1
+[DEBUG], 2024-06-27 17:54:09 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:54:09 UserDao:63 - 3. count:2
+[DEBUG], 2024-06-27 17:54:09 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:54:09 UserDao:63 - 3. count:3
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:54:09 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:54:09 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@3c9168dc
+[DEBUG], 2024-06-27 17:54:09 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:54:09 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:49 - ====================
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:50 - =context=org.springframework.context.support.GenericXmlApplicationContext@3c9168dc, started on Thu Jun 27 17:54:09 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:51 - =dao=com.pcwk.ehr.UserDao@33617539
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:88 - test()
+[DEBUG], 2024-06-27 17:54:09 UserDaoJUnitTest:57 - After each test
+[DEBUG], 2024-06-27 17:57:37 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:57:37 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@4310d43
+[DEBUG], 2024-06-27 17:57:37 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:57:37 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:57:37 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:57:37 UserDaoJUnitTest:53 - =context=org.springframework.context.support.GenericXmlApplicationContext@4310d43, started on Thu Jun 27 17:57:37 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:57:37 UserDaoJUnitTest:54 - =dao=com.pcwk.ehr.UserDao@1e81f160
+[DEBUG], 2024-06-27 17:57:37 UserDaoJUnitTest:55 - ====================
+[DEBUG], 2024-06-27 17:57:38 UserDao:89 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 17:57:38 UserDao:94 - 3.flag 3
+[DEBUG], 2024-06-27 17:57:38 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:57:38 UserDao:63 - 3. count:1
+[DEBUG], 2024-06-27 17:57:38 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:57:38 UserDao:63 - 3. count:2
+[DEBUG], 2024-06-27 17:57:38 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:57:38 UserDao:63 - 3. count:3
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:60 - After each test
+[DEBUG], 2024-06-27 17:57:38 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:57:38 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@3c9168dc
+[DEBUG], 2024-06-27 17:57:38 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:57:38 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:52 - ====================
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:53 - =context=org.springframework.context.support.GenericXmlApplicationContext@3c9168dc, started on Thu Jun 27 17:57:38 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:54 - =dao=com.pcwk.ehr.UserDao@33617539
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:55 - ====================
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:91 - test()
+[DEBUG], 2024-06-27 17:57:38 UserDaoJUnitTest:60 - After each test
+[DEBUG], 2024-06-27 17:58:18 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 17:58:18 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@290222c1
+[DEBUG], 2024-06-27 17:58:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 17:58:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 17:58:18 UserDaoJUnitTest:58 - ====================
+[DEBUG], 2024-06-27 17:58:18 UserDaoJUnitTest:59 - =context=org.springframework.context.support.GenericXmlApplicationContext@290222c1, started on Thu Jun 27 17:58:18 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:58:18 UserDaoJUnitTest:60 - =dao=com.pcwk.ehr.UserDao@658c5a19
+[DEBUG], 2024-06-27 17:58:18 UserDaoJUnitTest:61 - ====================
+[DEBUG], 2024-06-27 17:58:19 UserDao:89 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 17:58:19 UserDao:94 - 3.flag 3
+[DEBUG], 2024-06-27 17:58:19 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:58:19 UserDao:63 - 3. count:1
+[DEBUG], 2024-06-27 17:58:19 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:58:19 UserDao:63 - 3. count:2
+[DEBUG], 2024-06-27 17:58:19 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 17:58:19 UserDao:63 - 3. count:3
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:66 - After each test
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:58 - ====================
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:59 - =context=org.springframework.context.support.GenericXmlApplicationContext@290222c1, started on Thu Jun 27 17:58:18 GMT+09:00 2024
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:60 - =dao=com.pcwk.ehr.UserDao@658c5a19
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:61 - ====================
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:97 - test()
+[DEBUG], 2024-06-27 17:58:19 UserDaoJUnitTest:66 - After each test
+[DEBUG], 2024-06-27 18:01:40 XmlBeanDefinitionReader:393 - Loaded 2 bean definitions from class path resource [applicationContext.xml]
+[DEBUG], 2024-06-27 18:01:40 GenericXmlApplicationContext:637 - Refreshing org.springframework.context.support.GenericXmlApplicationContext@290222c1
+[DEBUG], 2024-06-27 18:01:40 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'connectionMaker'
+[DEBUG], 2024-06-27 18:01:40 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2024-06-27 18:01:40 UserDaoJUnitTest:57 - ====================
+[DEBUG], 2024-06-27 18:01:40 UserDaoJUnitTest:58 - =context=org.springframework.context.support.GenericXmlApplicationContext@290222c1, started on Thu Jun 27 18:01:40 GMT+09:00 2024
+[DEBUG], 2024-06-27 18:01:40 UserDaoJUnitTest:59 - =dao=com.pcwk.ehr.UserDao@658c5a19
+[DEBUG], 2024-06-27 18:01:40 UserDaoJUnitTest:60 - ====================
+[DEBUG], 2024-06-27 18:01:41 UserDao:89 - 1.sql   
+ DELETE FROM member    
+
+[DEBUG], 2024-06-27 18:01:41 UserDao:94 - 3.flag 3
+[DEBUG], 2024-06-27 18:01:41 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 18:01:41 UserDao:63 - 3. count:1
+[DEBUG], 2024-06-27 18:01:41 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 18:01:41 UserDao:63 - 3. count:2
+[DEBUG], 2024-06-27 18:01:41 UserDao:52 - 1.sql   
+ SELECT                      
+     COUNT(*) cnt            
+ FROM                        
+ 	member                  
+
+[DEBUG], 2024-06-27 18:01:41 UserDao:63 - 3. count:3
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:65 - After each test
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:57 - ====================
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:58 - =context=org.springframework.context.support.GenericXmlApplicationContext@290222c1, started on Thu Jun 27 18:01:40 GMT+09:00 2024
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:59 - =dao=com.pcwk.ehr.UserDao@658c5a19
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:60 - ====================
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:96 - test()
+[DEBUG], 2024-06-27 18:01:41 UserDaoJUnitTest:65 - After each test
