@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 1. SonySpeaker
+     2. LGTv생성, setter 주입
+ -->
+ <bean id="sonySpeaker" class="com.pcwk.ehr.di.SonySpeaker"/>
+ <bean id= "boseSpeaker" class="com.pcwk.ehr.di.BoseSpeaker"></bean>
+ 
+ <bean id="lgTv" class="com.pcwk.ehr.di.LGTv">
+   <constructor-arg ref="boseSpeaker" index="0"></constructor-arg>
+   <constructor-arg value="900000" index="1"></constructor-arg>
+ </bean> 
+ 
+</beans>
