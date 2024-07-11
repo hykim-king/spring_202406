@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+   
+   <!-- mapper interface scanner -->
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <property name="basePackage" value="com.pcwk.ehr.time"></property>
+   </bean>
+   <!-- annotation 설정 
+         base-package: com.pcwk.ehr하위 패키지 모두 읽기
+    -->
+   <context:component-scan base-package="com.pcwk.ehr"></context:component-scan>
+   <!-- JdbcTemplate -->
+   <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <property name="dataSource" ref="dataSource"></property>
+   </bean>
+    
+    <!-- sqlSessionTemplate -->
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+      <!-- mybatis-config.xml, mapper*.xml파일  -->
+      <constructor-arg index="0" ref="sqlSessionFactoryBean"></constructor-arg>
+    </bean>
+    <!-- 
+         mybatis-config.xml
+         mapper: user.xml, board.xml
+     -->		
+	<bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+	   <!-- db연결 -->
+	   <property name="dataSource" ref="dataSource"/>
+	   
+	   <!--  mybatis-config.xml 위치-->
+	   <property name="configLocation" value="classpath:mybatis-config.xml"/>
+	   <!-- mapper파일 : mapper/**/*.xml -->
+	   <property name="mapperLocations" value="classpath:mapper/**/*.xml"></property>
+	</bean>	
+		
+    <!-- 트랜잭션 Advice설정 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+	   <tx:attributes>
+	       <!-- 트랜잭션 적용: up으로 시작하는 메서드에 적용한다. 
+	       name : 트랜잭션 적용 메서드 이름
+	       read-only : 읽기 전용 여부
+	       rollback-for : 트랜잭션을 롤백할 예외 
+	       -->
+	       <tx:method name="*Tx" read-only="false" rollback-for="Exception"/>
+	           
+	       <!-- 트랜잭션 제외 : up으로 시작하지 않는 모든 메서드-->
+	       <tx:method name="*" read-only="true"/>  
+	   </tx:attributes>
+	</tx:advice>
+	
+	<!-- Tx -->
+	<aop:config>
+	   <aop:pointcut expression="execution( * com.pcwk.ehr..service.*Impl.*Tx(..))" id="txPointCut"/>
+	   <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>
+	</aop:config>
+	<!-- 'testUserService' is expected to be of type 'com.pcwk.ehr.user.service.
+	TestUserService' but was actually of type 'com.sun.proxy.$Proxy37' -->
+ 	<tx:annotation-driven proxy-target-class="true"
+	        transaction-manager="transactionManager" />
+	
+		
+    <bean id="transactionManager"
+        class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+    
+    <bean id="dataSource"
+        class="com.zaxxer.hikari.HikariDataSource">
+        <property name="driverClassName"
+            value="oracle.jdbc.driver.OracleDriver" />
+        <property name="jdbcUrl"
+            value="jdbc:oracle:thin:@localhost:1521:xe" />
+        <property name="username" value="pcwk" />
+        <property name="password" value="GOOD" />
+        
+        <!-- Optional settings -->
+        <property name="maximumPoolSize" value="10"></property>
+        <property name="minimumIdle" value="5"></property>
+        <property name="connectionTimeout" value="30000"></property>
+        <property name="idleTimeout" value="600000"></property>
+        <property name="maxLifetime" value="1800000"></property>
+        <!-- 
+			maximumPoolSize: 풀에 유지할 최대 연결 수입니다.
+			minimumIdle: 유휴 상태로 유지할 최소 연결 수입니다.
+			connectionTimeout: 연결 시도 시 타임아웃 설정입니다 (밀리초 단위).
+			idleTimeout: 유휴 연결이 풀에서 제거되기 전 대기 시간입니다 (밀리초 단위).
+			maxLifetime: 연결이 풀에서 제거되기 전 최대 생존 시간입니다 (밀리초 단위).
+         -->
+        
+    </bean>
+        
+    <!-- 개발용 이메일 설정-->
+    <bean id="dummyMailService" class="com.pcwk.ehr.user.service.DummyMailService"></bean>
+
+	<!-- 온라인 이메일 -->
+	<bean id="mailSenderImpl"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.naver.com"></property>
+		<property name="port" value="465"></property>
+		<property name="username" value="jamesol@naver.com"></property>
+		<property name="password" value="비번"></property>
+		<property name="defaultEncoding" value="utf-8"></property>
+
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.host">smtp.naver.com</prop>
+				<prop key="mail.smtp.port">465</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.ssl.protocols">TLSv1.2</prop>
+				<prop key="mail.smtp.ssl.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">smtp.naver.com</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+
+
+
+
+	<!-- UserServiceImpl -->
+	<bean id="userService"
+		class="com.pcwk.ehr.user.service.UserServiceImpl">
+		<property name="mailSender" ref="dummyMailService"></property>
+	</bean>
+
+    <!-- TestUserService -->
+    <bean id="testUserService" class="com.pcwk.ehr.user.service.TestUserService">
+        <constructor-arg value="james04"></constructor-arg>
+        <property name="mailSender" ref="dummyMailService"></property>
+        <property name="userDao" ref="userDao"></property>        
+    </bean>
+
+
+</beans>
