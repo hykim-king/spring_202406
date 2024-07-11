@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.ehr.mapper.BoardMapper">
+
+ <select id="doSelectOne" parameterType="Board" resultType="Board">
+	SELECT
+	    seq,
+	    div,
+	    title,
+	    contents,
+	    read_cnt    as readCnt,
+	    reg_id      as regId,
+	    TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') as regDt, 
+	    mod_id      as modId,
+	    TO_CHAR(mod_dt,'YYYY/MM/DD HH24:MI:SS') as modDt  
+	FROM
+	    board
+	WHERE seq = #{seq}
+ </select>
+
+ <select id="getSequence" resultType="int">
+	SELECT MAX(SEQ) seq 
+	  FROM board
+ </select>
+
+ <delete id="deleteAll">
+    DELETE FROM board
+ </delete>
+ 
+ <insert id="doSave" parameterType="Board">
+	INSERT INTO board (
+	    div,
+	    title,
+	    contents,
+	    read_cnt,
+	    reg_id,
+	    reg_dt,
+	    mod_id,
+	    mod_dt
+	) VALUES (
+	    #{div},
+	    #{title},
+	    #{contents},
+	    0,
+	    #{regId},
+	    sysdate,
+	    #{regId},
+	    sysdate
+	) 
+ </insert>
+ 
+</mapper>
