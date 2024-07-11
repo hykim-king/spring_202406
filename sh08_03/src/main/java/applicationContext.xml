@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+    <!-- 개발용 이메일 설정-->
+    <bean id="dummyMailService" class="com.pcwk.ehr.user.service.DummyMailService"></bean>
+
+	<!-- 온라인 이메일 -->
+	<bean id="mailSenderImpl"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.naver.com"></property>
+		<property name="port" value="465"></property>
+		<property name="username" value="jamesol@naver.com"></property>
+		<property name="password" value="비번"></property>
+		<property name="defaultEncoding" value="utf-8"></property>
+
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.host">smtp.naver.com</prop>
+				<prop key="mail.smtp.port">465</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.ssl.protocols">TLSv1.2</prop>
+				<prop key="mail.smtp.ssl.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">smtp.naver.com</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	<!-- 	<property name="dataSource" ref="dataSource"></property> -->
+		<constructor-arg index="0" ref="dataSource"></constructor-arg>
+	</bean>
+
+	<!-- UserServiceImpl -->
+	<bean id="userService"
+		class="com.pcwk.ehr.user.service.UserServiceImpl">
+		<property name="mailSender" ref="dummyMailService"></property>
+		<property name="transactionManager" ref="transactionManager"></property>
+		<property name="userDao" ref="userDao"></property>
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="pcwk" />
+		<property name="password" value="GOOD" />
+	</bean>
+
+	<bean id="userDao" class="com.pcwk.ehr.user.dao.UserDaoJdbc">
+		<!-- setter 주입 -->
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+</beans>
+ 
