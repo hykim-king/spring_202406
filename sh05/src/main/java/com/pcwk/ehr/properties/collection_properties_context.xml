@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="propertiesBean" class="com.pcwk.ehr.properties.PropertiesBean">
+        <property name="addressProp">
+            <props>
+                <prop key="홍대">서울특별시 마포구 양화로 122 LAB7 4층</prop>
+                <prop key="강남">서울특별시 강남구 테헤란로 124 삼원타워 5층</prop>
+            </props>
+        
+        
+        </property>
+    </bean>
+
+
+</beans>
