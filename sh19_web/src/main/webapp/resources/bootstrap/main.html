@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Bootstrap 5.3</title>
+
+	<link rel="shortcut icon" href="/ehr/resources/img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="/ehr/resources/css/bootstrap.css">
+    <style>
+        header, nav, footer {
+            background-color: #f8f9fa;
+            padding: 1rem;
+        }
+        article {
+            background-color: #e9ecef;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="container-fluid">
+        <h1>PCWK</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">회원</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">게시판</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">템플릿_리스트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">템플릿_등록</a>
+                    </li>                                        
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="container my-4">
+        <div class="row">
+            <article class="col-12 col-md-4">
+                <h2>회원</h2>
+                <p>피할수 없으면 즐겨라 – 로버트 엘리엇.</p>
+            </article>        
+            <!-- First Article -->
+            <article class="col-12 col-md-4">
+                <h2>공지사항</h2>
+                <p> 내일은 내일의 태양이 뜬다.</p>
+            </article>
+            <!-- Second Article -->
+            <article class="col-12 col-md-4">
+                <h2>자유게시판</h2>
+                <p>생 살 것처럼 꿈을 꾸어라.그리고 내일 죽을 것처럼 오늘을 살아라. – 제임스 딘.</p>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <p>Website Footer</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+<script src="/ehr/resources/js/bootstrap.bundle.js"></script> 
+</body>
+</html>
