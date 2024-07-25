@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Selector Example</title>
+    <script src="/ehr/resources/js/jquery_3_7_1.js"></script>
+</head>
+<body>
+    <p class="para">paragraph 태그.</p>
+    <p>다른 paragraph.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <div id="container">
+        <span>div 안 span 태그</span>
+    </div>
+    <script>
+        $(document).ready(function(){
+            // 태그 이름으로 선택
+            $("p").css("color", "red");
+
+            // 클래스 이름으로 선택
+            $(".para").css("font-weight", "bold");
+
+            // ID로 선택
+            $("#container").css("background-color", "lightgray");
+        });
+    </script>
+</body>
+</html>
