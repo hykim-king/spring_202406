@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="logImpl" value="LOG4J2" />
+	</settings>
+
+
+	<typeAliases>
+	    <typeAlias alias="Search" type="com.pcwk.ehr.cmn.Search"/>
+	    <typeAlias alias="Board" type="com.pcwk.ehr.board.domain.Board" />
+		<typeAlias alias="Code" type="com.pcwk.ehr.code.domain.Code" />
+		<typeAlias alias="User" type="com.pcwk.ehr.user.domain.User" />
+		<typeAlias alias="MyMapper"
+			type="com.pcwk.ehr.mymapper.domain.MyMapper" />
+	</typeAliases>
+
+
+</configuration>
