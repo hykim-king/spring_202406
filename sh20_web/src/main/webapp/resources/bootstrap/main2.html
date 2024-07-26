@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Layout with Bootstrap 5.3</title>
+<link rel="shortcut icon" href="/ehr/resources/img/favicon.ico" type="image/x-icon">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/ehr/resources/css/bootstrap.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+<!-- FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+/* Reset */
+html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,nav,section,article,header,footer,main,aside,dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
+body,input,select,textarea,button,img,fieldset {border:none;}
+ul,ol,li{list-style:none;}
+table{width:100%;border-spacing:0;border-collapse:collapse;}
+address,cite,code,em,i{font-style:normal;font-weight:normal;}
+label,img,input,select,textarea,button,a {vertical-align:middle;}
+u,ins,a{text-decoration:none;}
+button { cursor: pointer;}
+
+
+    body {
+        font-family: 'Nanum Gothic', sans-serif;
+        border: 1px solid #000;
+    }
+    header {
+        background-color: #005b9f;
+        color: white;
+        line-height: 50px;
+    }
+    footer {
+        background-color: #616161;
+        color: white;
+        text-align: center;
+    }
+    a { 
+        color: white;
+    }
+    article {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid #dee2e6;
+    }
+    aside {
+        background-color: #e9ecef;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid #dee2e6;
+    }
+        
+    .navbar-nav .nav-link:hover {
+        background: #d26060;
+        border-radius: 4px;
+    }
+    .content_wrap {
+        min-height: calc(100vh - 200px);
+    }
+    
+</style>
+<script src="/ehr/resources/js/jquery_3_7_1.js"></script>
+<script src="/ehr/resources/js/common.js"></script>
+</head>
+<body>
+    <!-- py-2는 padding-top과 padding-bottom 속성을 .5rem(약 8px)으로 설정 -->
+    <header class="container-fluid py-2">
+        <div class="container">
+            <h1 class="m-0">Header</h1>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- margin-bottom: .5rem (약 8px)입니다. -->
+                <!-- mb-lg-0 큰 화면(lg 이상)에서는 하단 여백을 제거합니다 (margin-bottom: 0).-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MyPage</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- my-4는 margin-top과 margin-bottom 속성을 각각 1.5rem (약 24px)으로 설정합니다.  -->
+    <div class="content_wrap container my-4">
+        <div class="row">
+            <article class="col-12 col-md-9">
+                <h2>Article</h2>
+                <p>This is the main content area.</p>
+            </article>
+            <aside class="col-12 col-md-3">
+                <h2>Aside</h2>
+                <p>This is the sidebar content.</p>
+            </aside>
+        </div>
+    </div>
+    <!-- 기능: py-2는 padding-top과 padding-bottom 속성을 .5rem (약 8px)으로 설정합니다.  -->
+    <footer class="container-fluid py-2">
+        <div class="container">
+            <p class="m-0">&copy; 2023 PCWK 웹 페이지. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="/ehr/resources/js/bootstrap.bundle.js"></script> 
+</body>
+</html>
